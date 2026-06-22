@@ -1,0 +1,6 @@
+{
+  "name": "LifeInsights",
+  "description": "An all-in-one personal growth platform providing daily psychology, academic growth, relationships, sports, faith, and everyday life insights with an AI Life Coach, personalized summaries, habit-building tools, and daily learning libraries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

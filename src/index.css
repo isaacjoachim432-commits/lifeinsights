@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cinzel", "Cinzel Decorative", serif;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
+  
+  --color-gold-50: #fefcf0;
+  --color-gold-100: #fdf6cf;
+  --color-gold-200: #fbea9a;
+  --color-gold-300: #f8da5a;
+  --color-gold-400: #f5c42c;
+  --color-gold-500: #dfa312;
+  --color-gold-600: #c2810a;
+  --color-gold-700: #9e5f0a;
+  --color-gold-800: #814c0f;
+  --color-gold-900: #6a3e11;
+  --color-gold-950: #3e2006;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom gorgeous animations and scrollbar config */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark .glass-panel {
+  background: rgba(24, 24, 27, 0.75);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #fbe090 0%, #dfa312 50%, #814c0f 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #ffebad 0%, #dfa312 60%, #b37307 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark-gold-card {
+  background: radial-gradient(circle at top left, #1a150c 0%, #09090b 100%);
+}
+
+/* Custom seamless thin scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.45);
+}
